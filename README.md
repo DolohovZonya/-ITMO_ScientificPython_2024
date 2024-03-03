@@ -1,1 +1,1 @@
-# -ITMO_ScientificPython_2024
+# ITMO_ScientificPython_2024
