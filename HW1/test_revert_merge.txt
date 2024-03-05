@@ -1,3 +1,1 @@
 This is a file for testing revert and merge.
-
-This is a change.
