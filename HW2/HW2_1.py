@@ -44,7 +44,7 @@ def parse_response_ensembl(resp: dict):
 
 def get_and_parse(ids: list):
 
-    if re.fullmatch('ENS[ATPGM]+[0-9]{11}', ids[0]):
+    if re.fullmatch('ENS[A-Z]{1,5}\d{11}', ids[0]):
         resp = get_ensembl(ids)
         return parse_response_ensembl(resp)
 
