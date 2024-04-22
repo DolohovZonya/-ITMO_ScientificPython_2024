@@ -46,7 +46,6 @@ class Car:
     def accelerate(self, upper_border=None):
         if self.increaser is None:
             self.increaser = IncreaseSpeed(self.current_speed, self.max_speed)
-
         if upper_border is None:
             self.current_speed = next(self.increaser)
             print(f"current speed: {self.current_speed}")
@@ -67,7 +66,6 @@ class Car:
     def brake(self, lower_border=None):
         if self.decreaser is None:
             self.decreaser = DecreaseSpeed(self.current_speed)
-
         if lower_border is None:
             self.current_speed = next(self.decreaser)
             print(f"current speed: {self.decreaser}")
