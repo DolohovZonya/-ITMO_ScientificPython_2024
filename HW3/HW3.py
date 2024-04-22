@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
->>>>>>> HW3
 import openmeteo_requests
 from datetime import datetime
 
@@ -51,10 +46,6 @@ class Car:
     def accelerate(self, upper_border=None):
         if self.increaser is None:
             self.increaser = IncreaseSpeed(self.current_speed, self.max_speed)
-<<<<<<< HEAD
-=======
-        
->>>>>>> HW3
         if upper_border is None:
             self.current_speed = next(self.increaser)
             print(f"current speed: {self.current_speed}")
@@ -75,16 +66,12 @@ class Car:
     def brake(self, lower_border=None):
         if self.decreaser is None:
             self.decreaser = DecreaseSpeed(self.current_speed)
-<<<<<<< HEAD
         if lower_border is None:
             self.current_speed = next(self.decreaser)
-            print(f"current speed: {self.decreaser}")
-=======
-        
+            print(f"current speed: {self.current_speed}")
         if lower_border is None:
  	    self.current_speed = next(self.decreaser)
             print(f"current speed: {self.current_speed}")
->>>>>>> HW3
         else:
             if lower_border >= 0:
                 while self.current_speed != lower_border:
@@ -96,10 +83,6 @@ class Car:
                     self.current_speed = next(self.decreaser)
                     print("current speed has been decreased to ", self.current_speed)
                 print("current speed has reached the lower border")
-<<<<<<< HEAD
-=======
-        
->>>>>>> HW3
         return f"current speed: {self.current_speed}"
 
 
